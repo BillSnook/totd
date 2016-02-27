@@ -44,23 +44,7 @@ class Network {
         
 //        let jidxString = String( jidx )
         jidx = 3        // WFS test
-        Alamofire.request(.GET, "http://www.billsnook.com/xperimentl/jotd/json-text.php"
-, parameters: ["jidx": "\(jidx)" ])
-//            .response { (_,_,data, err) in
-//                let str = String(data: data!, encoding: NSASCIIStringEncoding)
-//                print( str )
-//                if err == nil  {
-//                    let err = NSErrorPointer()
-//                    let json = JSON(data: data!, options: .AllowFragments, error: err )
-//                    if json != nil {
-//                        jokesReturn( json )
-//                    } else {
-//                        print( "Bad JSON: \(err)" )
-//                    }
-//                } else {
-//                    print( err )
-//                }
-//            }
+        Alamofire.request(.GET, "http://www.billsnook.com/xperimentl/jotd/json-text.php" , parameters: ["jidx": "\(jidx)" ])
             .responseJSON { response in
                 var json: JSON?
                 switch response.result {

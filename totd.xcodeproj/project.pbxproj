@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		10386C1E48AC2C5CD31D891A /* Pods_totd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48CA2C88375198B10A8578D1 /* Pods_totd.framework */; };
 		A9CA869F1C80D2E200785941 /* totd.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = A9CA869D1C80D2E200785941 /* totd.xcdatamodel */; };
-		A9CA86A01C80D2E200785941 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = A9CA869E1C80D2E200785941 /* README.md */; };
 		A9CA86A31C80D4CD00785941 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA86A11C80D4CD00785941 /* Network.swift */; };
 		A9CA86A41C80D4CD00785941 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA86A21C80D4CD00785941 /* Utilities.swift */; };
 		A9ED598C1C7FDDE3003AFE3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ED598B1C7FDDE3003AFE3A /* AppDelegate.swift */; };
@@ -506,7 +505,6 @@
 				A9ED598E1C7FDDE3003AFE3A /* ViewController.swift in Sources */,
 				A9CA86A41C80D4CD00785941 /* Utilities.swift in Sources */,
 				A9CA86A31C80D4CD00785941 /* Network.swift in Sources */,
-				A9CA86A01C80D2E200785941 /* README.md in Sources */,
 				A9ED598C1C7FDDE3003AFE3A /* AppDelegate.swift in Sources */,
 				A9ED59DF1C80C49A003AFE3A /* ListViewController.swift in Sources */,
 			);

@@ -10,6 +10,10 @@ import UIKit
 //import CoreData
 import SwiftyJSON
 
+
+let fontStyle = UIFontTextStyleHeadline
+
+
 class ViewController: UIViewController {
 
 	
@@ -35,7 +39,7 @@ class ViewController: UIViewController {
 		log.debug( "intial message for app, message type selected is <\(messagePath)>" )
 		
 		
-		messageLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline)
+		messageLabel.font = UIFont.preferredFontForTextStyle(fontStyle)
 		
 		NSNotificationCenter.defaultCenter().addObserver(self,
 			selector: "preferredContentSizeChanged:",
@@ -54,7 +58,8 @@ class ViewController: UIViewController {
 	}
 
 	func preferredContentSizeChanged(notification: NSNotification) {
-		messageLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline)
+		messageLabel.font = UIFont.preferredFontForTextStyle(fontStyle)
+		log.debug( "content size category changed" )
 	}
 	
 	private func updateMessage() {
@@ -75,7 +80,7 @@ class ViewController: UIViewController {
 	}
 	
 	func setupDisplay( resultJokes: JSON ) {
-		print( "setupDisplay: \(resultJokes)" )
+//		print( "setupDisplay: \(resultJokes)" )
 		
 		let jotd = resultJokes["jotd"].stringValue
 		
