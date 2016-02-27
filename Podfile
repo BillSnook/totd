@@ -14,21 +14,18 @@ end
 
 target 'totdTests' do
 #	platform :ios, '9.0'
-
 end
 
 target 'totdUITests' do
 #	platform :ios, '9.0'
-
 end
 
 target 'totd WatchKit App' do
 #   platform :watchos, '2.0'
-
 end
 
 target 'totd WatchKit Extension' do
-#   platform :watchos, '2.0'
-
+    platform :watchos, '2.0'
+    shared_pods
 end
 

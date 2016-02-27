@@ -7,11 +7,27 @@
 //
 
 import WatchKit
+import XCGLogger
+
+
+let log = XCGLogger.defaultInstance()
+
+var messageSelection: Int?
+
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
-
+    
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
+        
+        // Setup debug logger
+        log.setup(.Debug, showThreadName: true, showLogLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: nil, fileLogLevel: nil)
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "mm:ss.SSS"		// Short time string - minute, seconds, thousandth of a second
+        dateFormatter.locale = NSLocale.currentLocale()
+        log.dateFormatter = dateFormatter
+        
+        messageSelection = 0
     }
 
     func applicationDidBecomeActive() {
