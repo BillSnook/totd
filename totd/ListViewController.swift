@@ -13,16 +13,33 @@ import CoreData
 
 class ListViewController: UIViewController, UITableViewDataSource {
 	
+	
 	@IBOutlet weak var tableView: UITableView!
 
-	var people = [NSManagedObject]()
+	var jokes = [NSManagedObject]()
+	
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		title = "\"The List\""
+		title = "Joke List"
 		tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
-}
+	}
+	
+	override func viewWillAppear(animated: Bool) {
+		super.viewWillAppear(animated)
+		
+		let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+		let managedContext = appDelegate.managedObjectContext
+		let fetchRequest = NSFetchRequest(entityName: "Jokes")
+		
+		do {
+			let results = try managedContext.executeFetchRequest(fetchRequest)
+			jokes = results as! [NSManagedObject]
+		} catch let error as NSError {
+			print("Could not fetch \(error), \(error.userInfo)")
+		}
+	}
 	
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
@@ -31,15 +48,15 @@ class ListViewController: UIViewController, UITableViewDataSource {
 
 	// MARK: UITableViewDataSource
 	func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return people.count
+		return jokes.count
 	}
  
 	func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 		
 		let cell = tableView.dequeueReusableCellWithIdentifier("Cell")
 		
-		let person = people[indexPath.row]
-		cell!.textLabel!.text = person.valueForKey( "name" ) as? String
+		let joke = jokes[indexPath.row]
+		cell!.textLabel!.text = joke.valueForKey( "text" ) as? String
 		
 		return cell!
 	}

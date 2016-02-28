@@ -49,8 +49,8 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
     
-    func returnJokes( resultJokes: JSON? ) -> () {
-        //		print( "Got result: \(resultJokes)" )
+	func returnJokes( resultJokes: JSON?, index: Int ) -> () {
+//		print( "Got result: \(resultJokes)" )
         
         if let jsonResult = resultJokes?[0] {
             setupDisplay( jsonResult )
@@ -66,23 +66,22 @@ class InterfaceController: WKInterfaceController {
         let jotd = resultJokes["jotd"].stringValue
         
         self.textDisplayLabel.setText( jotd )
-        //        self.messageLabel.text = jotd
     }
     
     @IBAction func selectJOTD() {
         messageSelection = 0
-        //        network!.queueRequest( network!.URLFromPath( Utilities.messageName( messageSelection! ) + jotdSrcURL ), completion: { (result) -> () in
-        //            log.debug( "completion for queueRequest for jotd: \(result)" )
-        //            self.textDisplayLabel.setText( result )
-        //        })
+//        network!.queueRequest( network!.URLFromPath( Utilities.messageName( messageSelection! ) + jotdSrcURL ), completion: { (result) -> () in
+//            log.debug( "completion for queueRequest for jotd: \(result)" )
+//            self.textDisplayLabel.setText( result )
+//        })
     }
     
     @IBAction func selectTOTD() {
         messageSelection = 1
-        //        network!.queueRequest( network!.URLFromPath( Utilities.messageName( messageSelection! ) + jotdSrcURL ), completion: { (result) -> () in
-        //            log.debug( "completion for queueRequest for totd: \(result)" )
-        //            self.textDisplayLabel.setText( result )
-        //        })
+//        network!.queueRequest( network!.URLFromPath( Utilities.messageName( messageSelection! ) + jotdSrcURL ), completion: { (result) -> () in
+//            log.debug( "completion for queueRequest for totd: \(result)" )
+//            self.textDisplayLabel.setText( result )
+//        })
     }
     
 }

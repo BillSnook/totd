@@ -7,7 +7,7 @@
 //
 
 import UIKit
-//import CoreData
+import CoreData
 import SwiftyJSON
 
 
@@ -68,24 +68,58 @@ class ViewController: UIViewController {
 		
 	}
 	
-	func returnJokes( resultJokes: JSON? ) -> () {
+	func returnJokes( resultJokes: JSON?, index: Int ) -> () {
 //		print( "Got result: \(resultJokes)" )
 		
 		if let jsonResult = resultJokes?[0] {
-			setupDisplay( jsonResult )
+			manageJokes( jsonResult, index: index )
 		} else {
 			print( "No jokes returned" )
 		}
 		
 	}
 	
-	func setupDisplay( resultJokes: JSON ) {
-//		print( "setupDisplay: \(resultJokes)" )
+	func manageJokes( resultJokes: JSON, index: Int ) {
+//		print( "manageJokes: \(resultJokes)" )
 		
 		let jotd = resultJokes["jotd"].stringValue
 		
 		self.messageLabel.text = jotd
+		
+		self.saveJoke( jotd, index: index )
 	}
+
+	func saveJoke(name: String, index: Int) {
+		
+		let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+		
+/**/
+		let managedContext = appDelegate.managedObjectContext
+		// See of joke (with id) already exists
+		let fetch = NSFetchRequest( entityName: "Jokes" )
+		let predicate = NSPredicate( format: "jidx == \(index)" )
+		fetch.predicate = predicate
+
+		do {
+			let results = try managedContext.executeFetchRequest(fetch)
+			if results.isEmpty {
+				let entity =  NSEntityDescription.entityForName("Jokes", inManagedObjectContext: managedContext)
+				let joke = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
+				joke.setValue(name, forKey: "text")
+				joke.setValue(index, forKey: "jidx")
+				
+				do {
+					try managedContext.save()
+				} catch let error as NSError  {
+					print("Could not save \(error), \(error.userInfo)")
+				}
+			}
+		} catch let error as NSError {
+			print("Could not fetch \(error), \(error.userInfo)")
+		}
+
+	}
+
 	
 	@IBAction func changeMessageType(sender: UISegmentedControl) {
 		let segCtl = sender

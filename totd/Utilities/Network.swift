@@ -11,7 +11,7 @@ import Alamofire
 import SwiftyJSON
 
 
-typealias JokeBlock = (JSON?) -> ()
+typealias JokeBlock = ( JSON?, Int ) -> ()
 
 
 class Network {
@@ -60,7 +60,7 @@ class Network {
                     print( "URLRequest failure: \(error)" )
                     print( response.result.value )
                 }
-                jokesReturn( json )
+                jokesReturn( json, jidx )
             }
         
     }
