@@ -1,0 +1,1034 @@
+/*     MAIN     */
+body {
+	margin: 0px;
+	text-align: center;
+	font-family: Lucida Grande, Geneva, Arial, Verdana, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-image: url(images/bg.gif);
+	background-repeat: repeat-x;
+	background-color: #dadada;
+}
+
+#container{
+	position: relative;
+	width: 960px;
+	margin: 0px auto;
+}
+
+#header {
+	width: 100%;
+	height: 60px;
+/*	background-image: url(images/header.gif); */
+    background-color: #ccc;
+	text-align: right;
+/*	padding-right: 30px; */
+	padding-top: 10px;
+	font-family: Lucida Grande, Geneva, Arial, Verdana, sans-serif;
+	font-size: 11px;
+	color: #005789;
+}
+
+.greetings {
+    position: relative;
+	width: 92%;
+    height: 20px;
+    float: right;
+    padding-right: 4%;
+    clear: both;
+}
+
+.greetSpan {
+    padding-right: 30px;
+}
+
+#Clock {
+    position: relative;
+    float: right;
+}
+
+#Info {
+    position: relative;
+    float: right;
+    padding-right: 20px;
+}
+
+#Banner {
+    position: relative;
+    float: right;
+}
+
+.clear {
+    position: relative;
+    clear: both;
+}
+
+
+/*     NAVIGATION     */
+#nav {
+	width: 920px;
+	height: 27px;
+	padding: 0 20px;
+	background-image: url(images/body_bg.gif);
+	font-family: Lucida Grande, Geneva, Arial, Verdana, sans-serif;
+}
+	
+.nav-tools {
+	color: #005789;
+	text-decoration: underline;
+}
+.nav-tools:HOVER {
+	color: #005789;
+	text-decoration: none;
+}
+
+
+/*     FOOTER     */
+#footer {
+	width: 930px;
+	height: 20px;
+	background-image: url(images/footer.gif);
+	font-family: Lucida Grande, Geneva, Arial, Verdana, sans-serif;
+	font-size: 9px;
+	text-align: left;
+	padding-left: 30px;
+	padding-top: 7px;
+	color: #777777;
+}
+	
+.copyright {
+	color: #777777;
+	text-decoration: underline;
+}
+a.copyright {
+	color: #777777;
+	text-decoration: underline;
+}
+.copyright:HOVER {
+	text-decoration: none;
+}
+
+
+/*     BODY     */
+.body-bg {
+	background-image: url(images/body_bg.gif);
+}
+
+
+/*     PAGE BODY     */
+#page-body{
+	width: 960px;
+	min-height: 500px;
+/*	background: url(images/body_bg.gif); */
+    background-color: #c4c4c4;
+}
+
+h1 {
+	font-family: Lucida Grande, Geneva, Arial, Verdana, sans-serif;
+	font-size: 18px;
+	color: #005789;
+	font-weight: normal;
+}
+	
+#main-body {
+	width: 100%;
+	text-align: left;
+}
+
+.main {
+	width: 910px;
+	text-align: left;
+	vertical-align: top;
+}
+
+.main-left {
+	background-color: #e6e6e6;
+	vertical-align: top;
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #666666;
+}
+
+.form {
+	padding-left: 215px;
+}
+
+a {
+	color: #005789;
+	text-decoration: none;
+}
+a:HOVER {
+	color: #005789;
+	text-decoration: underline;
+}
+	
+	
+/*     FORM DISPLAY     */
+.table_form {
+/*	background-color: #e8f0ff; */
+}
+
+.field-title {
+	color: #212121;
+}
+
+.field {
+	border: 1px solid #cfdfe9;
+	background-color: #FFFFFF;
+}
+.field-button {
+	color: #005789;
+}
+
+.table_header { /* convert to use new div class */
+	background-color: #7fabc4;
+	color: #ffffff;
+	font-size: 10px;
+}
+.table_header_sel {
+	background-color: #7fabc4;
+	color: #003333;
+	font-size: 10px;
+}
+a.table_header:HOVER {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+	
+.text-account {
+	color: #005789;
+	font-size: 12px;
+}
+.text-contact-name {
+	font-weight: bold;
+}
+
+.text-work-contact-name {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.text-work-contact-info {
+	font-size: 16px;
+}
+
+.text_note_type {
+	color: #005789;
+	border: 1px solid #ffffff;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.tab-type {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.msg-type {
+	color: #000000;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.debug-query {
+	background-color: #FFFFFF;
+	color: #FF0000;
+	font-size: 12px;
+}
+
+.live_clock {
+	color: #000000;
+}
+
+/*	Mainly for category display pages from here on down */
+.tabViewSpace {
+	position: relative;
+	width: 910px;
+	margin-left: auto;
+	margin-right: auto;
+	border-width: 0px;
+	border-spacing: 0px 0px;
+	text-align: left;
+	vertical-align: top;
+}
+
+.data_show_disp {
+	border-width: 0px;
+	border-spacing: 0px 5px;
+}
+
+.accounts_even_bkgrnd {
+	background-color: #ddeeff;
+}
+
+.accounts_odd_bkgrnd {
+	background-color: #ccddff;
+}
+
+.contacts_even_bkgrnd {
+	background-color: #ddffee;
+}
+
+.contacts_odd_bkgrnd {
+	background-color: #ccffdd;
+}
+
+.notes_even_bkgrnd {
+	background-color: #eeddff;
+}
+
+.notes_odd_bkgrnd {
+	background-color: #ddccff;
+}
+
+.tickets_even_bkgrnd {
+/*	background-color: #ffddee; */
+	background-color: #ffeeee;
+}
+
+.tickets_odd_bkgrnd {
+/*	background-color: #ffccdd; */
+	background-color: #ffdddd;
+}
+
+.tasks_even_bkgrnd {
+	background-color: #ffeedd;
+}
+
+.tasks_odd_bkgrnd {
+	background-color: #ffddcc;
+}
+
+.header_bkgrnd {
+	padding-left: 10px;
+}
+
+.accounts_new_edit_bkgrnd {
+	background-color: #ffffff;
+}
+
+.contacts_new_edit_bkgrnd {
+	background-color: #ffffff;
+}
+
+.tickets_new_edit_bkgrnd {
+	background-color: #ffffff;
+}
+
+/*
+.tickets_tab_colors {
+	background-color: #ffbbcc;
+	color: #ffddee;
+}
+
+//  class="'.$category.'_button_display"
+.account_button_display {
+	background-color: #0000ff;
+	color: #9999ff;
+}
+
+.contact_button_display {
+	background-color: #00ff00;
+	color: #99ff99;
+}
+
+.ticket_button_display {
+	background-color: #ff0000;
+	color: #ff9999;
+}
+*/
+
+.tab_separator {
+	position: relative;
+	left: 2px;
+}
+
+.autocompletediv {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	visibility: hidden;
+	width: 0px;
+/*	z-index: 11;
+	background-color: #ffff00;
+	color: #ffff99; */
+}
+
+/*
+	Here we define the new definitions for the div-based show routines.
+*/
+
+/* Entire line of filter input */
+#filterForm {
+	height: 22px;
+	text-align: right;
+}
+
+/* Entire category label block */
+#categoryLabelField {
+	position: relative;		/* to enclosing page */
+	width: 100%;
+	top: 2px;
+	height: 26px;
+	border-width: 0px;
+	border-spacing: 0px 0px;
+	line-height: 22px;
+}
+
+/* Name field of category label */
+#categoryLabelText {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: left;
+	text-transform: capitalize;
+}
+
+#filtPane {
+	position: relative;
+}
+
+/*
+ Add 'Category' button to label
+	padding-left: 90px;
+
+ */
+#categoryLabelNewButton {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 200px;
+	text-align: right;
+}
+
+#accountLabelNewButton {
+	position: absolute;
+	right: 400px;
+	text-align: right;
+}
+
+#contactLabelNewButton {
+	position: absolute;
+	right: 200px;
+	text-align: right;
+}
+
+#ticketLabelNewButton {
+	position: absolute;
+	right: 0px;
+	text-align: right;
+}
+
+/* Entire category data block */
+#mainPane {
+	position: relative;
+	top: 0px;
+}
+
+/* Entire category header block, to hold column-headers/sort-selectors */
+#categoryHeader {
+	position: relative;
+	top: 0px;
+	bottom: 5px;
+	height: 14px;
+	background-color: #7fabc4;
+	color: #ffffff;
+	font-size: 10px;
+	line-height: 14px;
+	clear: both;
+}
+
+/* Entire category data block */
+.categoryBody {
+	position: relative;
+	top: 0px;
+}
+
+.categoryBodyStatus {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	padding-left: 10px;
+	line-height: 18px;
+}
+
+.categoryBodyLine {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	height: 16px;
+	line-height: 16px;
+}
+
+/*
+	Here we define the show-related css classes for both the potentially sortable category
+	headers and for their data fields, mostly for positioning purposes for now.
+*/
+
+/* Account (company) field names */
+.acct_name {
+	position: absolute;
+	left: 0px;
+	width: 195px;
+	padding-left: 5px;
+}
+
+.acct_city {
+	position: absolute;
+	left: 200px;
+	padding-left: 5px;
+}
+
+.acct_status {
+	position: absolute;
+	left: 400px;
+	padding-left: 5px;
+}
+
+.acct_number {
+	position: absolute;
+	left: 550px;
+	padding-left: 5px;
+}
+
+.acct_bill_date {
+	position: absolute;
+	left: 634px;
+	padding-left: 5px;
+}
+
+
+/* Contact header block */
+.contact_affil_hdr {
+	background-color: #e8f0f4;
+}
+
+.contact_affil_data {
+	position: relative;
+	left: 100px;
+	color: #005789;
+	font-size: 12px;
+}
+
+/* Contact field names */
+.contact_last_name {
+	position: absolute;
+	left: 0px;
+	width: 195px;
+	padding-left: 5px;
+}
+
+.acct_company_name {
+	position: absolute;
+	left: 95px;
+	padding-left: 5px;
+}
+
+.contact_city {
+	position: absolute;
+	left: 200px;
+	padding-left: 5px;
+}
+
+.contact_phone_work1 {
+	position: absolute;
+	left: 400px;
+	padding-left: 5px;
+}
+
+.contact_fax1 {
+	position: absolute;
+	left: 550px;
+	padding-left: 5px;
+}
+
+.contact_contract_number {
+	position: absolute;
+	left: 700px;
+	padding-left: 5px;
+}
+
+
+
+/* Ticket field names */
+.ticket_last_name {
+	position: absolute;
+	left: 0px;
+	padding-left: 5px;
+}
+
+.ticket_email {
+	position: absolute;
+	left: 200px;
+	padding-left: 5px;
+}
+
+.ticket_phone {
+	position: absolute;
+	left: 400px;
+	padding-left: 5px;
+}
+
+.ticket_priority {
+	position: absolute;
+	left: 550px;
+	padding-left: 5px;
+}
+
+.ticket_date_priority {
+	position: absolute;
+	left: 598px;
+	padding-left: 5px;
+}
+
+.ticket_create_date {
+	position: absolute;
+	left: 608px;
+	padding-left: 5px;
+}
+
+.ticket_case_number {
+	position: absolute;
+	left: 700px;
+	padding-left: 5px;
+}
+
+.right_buttons {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+.ticket_description {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-bottom: 3px;
+}
+
+.ticket_description_text {
+	color: #0000ff;
+}
+
+
+/*
+	Here we define the edit-related css classes, mostly for positioning purposes for now.
+*/
+
+/* Main accounts edit form div */
+.acct_ed_main_form {
+	position: relative;		/* Place next in page flow, contained entities will be absolute-based to this */
+	width: 910px;
+	height: 98px;
+	margin-bottom: 0px;
+}
+
+.acct_ed_company_name {
+	position: absolute;
+	left: 0px;
+	top: 3px;
+	clear: left;
+	padding-left: 3px;
+}
+
+.acct_ed_name {
+	position: absolute;
+	left: 450px;
+	top: 3px;
+	padding-left: 3px;
+}
+
+.acct_ed_addr1 {
+	position: absolute;
+	left: 0px;
+	top: 25px;
+	padding-left: 3px;
+}
+
+.acct_ed_city {
+	position: absolute;
+	left: 225px;
+	top: 25px;
+	padding-left: 3px;
+}
+
+.acct_ed_state {
+	position: absolute;
+	left: 450px;
+	top: 25px;
+	padding-left: 3px;
+}
+
+.acct_ed_postal {
+	position: absolute;
+	left: 675px;
+	top: 25px;
+	padding-left: 3px;
+}
+
+.acct_ed_number {
+	position: absolute;
+	left: 0px;
+	top: 47px;
+	padding-left: 3px;
+}
+
+.acct_ed_bill {
+	position: absolute;
+	left: 225px;
+	top: 47px;
+	padding-left: 3px;
+}
+
+.acct_ed_status {
+	position: absolute;
+	left: 450px;
+	top: 47px;
+	padding-left: 3px;
+}
+
+.acct_ed_contacts {
+	position: absolute;
+	left: 675px;
+	top: 47px;
+	padding-left: 3px;
+}
+
+.acct_ed_contacts_none {
+	position: absolute;
+	left: 690px;
+	top: 51px;
+	padding-left: 3px;
+}
+
+.acct_ed_ok {
+	position: absolute;
+	left: 300px;
+	top: 72px;
+}
+
+.acct_ed_cancel {
+	position: absolute;
+	left: 500px;
+	top: 72px;
+}
+
+
+/* Main contacts edit form div */
+.contact_ed_main_form {
+	position: relative;		/* Place next in page flow, contained entities will be absolute-based to this */
+	width: 910px;
+	height: 120px;
+	margin-bottom: 0px;
+}
+
+.contact_ed_first_name {
+	position: absolute;
+	left: 0px;
+	top: 3px;
+	padding-left: 3px;
+}
+
+.contact_ed_last_name {
+	position: absolute;
+	left: 225px;
+	top: 3px;
+	padding-left: 3px;
+}
+
+.contact_ed_account_id {
+	position: absolute;
+	left: 450px;
+	top: 3px;
+	padding-left: 3px;
+}
+
+.contact_ed_email1 {
+	position: absolute;
+	left: 0px;
+	top: 25px;
+	padding-left: 3px;
+}
+
+.contact_ed_title {
+	position: absolute;
+	left: 225px;
+	top: 25px;
+	padding-left: 3px;
+}
+
+.contact_ed_contract_number {
+	position: absolute;
+	left: 450px;
+	top: 25px;
+	padding-left: 5px;
+}
+
+.contact_ed_accounts {
+	position: absolute;
+	left: 680px;
+	top: 25px;
+}
+
+
+.contact_ed_phone_work1 {
+	position: absolute;
+	left: 0px;
+	top: 47px;
+	padding-left: 3px;
+}
+
+.contact_ed_phone_work2 {
+	position: absolute;
+	left: 225px;
+	top: 47px;
+	padding-left: 3px;
+}
+
+.contact_ed_phone_home1 {
+	position: absolute;
+	left: 450px;
+	top: 47px;
+	padding-left: 3px;
+}
+
+.contact_ed_fax1 {
+	position: absolute;
+	left: 675px;
+	top: 47px;
+	padding-left: 3px;
+}
+
+.contact_ed_address1 {
+	position: absolute;
+	left: 0px;
+	top: 70px;
+	padding-left: 3px;
+}
+
+.contact_ed_city {
+	position: absolute;
+	left: 225px;
+	top: 70px;
+	padding-left: 3px;
+}
+
+.contact_ed_state {
+	position: absolute;
+	left: 450px;
+	top: 70px;
+	padding-left: 3px;
+}
+
+.contact_ed_postal {
+	position: absolute;
+	left: 675px;
+	top: 70px;
+	padding-left: 3px;
+}
+
+.contact_ed_ok {
+	position: absolute;
+	left: 300px;
+	top: 94px;
+}
+
+.contact_ed_cancel {
+	position: absolute;
+	left: 500px;
+	top: 94px;
+}
+
+
+/* Main tickets edit form div */
+.ticket_ed_main_form {
+	position: relative;		/* Place next in page flow, contained entities will be relative to this */
+	width: 910px;
+	height: 145px;
+	margin-bottom: 0px;
+}
+
+.ticket_ed_main_form_soln {
+	position: relative;		/* Place next in page flow, contained entities will be relative to this */
+	width: 910px;
+	height: 190px;
+	margin-bottom: 0px;
+}
+
+.ticket_ed_first_name {
+	position: relative;
+	left: 0px;
+	top: 3px;
+	width: 180px;
+	padding-left: 3px;
+	float: left;
+}
+
+.ticket_ed_last_name {
+	position: relative;
+	left: 0px;
+	top: 3px;
+	width: 180px;
+	padding-left: 3px;
+	float: left;
+}
+
+.ticket_ed_phone {
+	position: relative;
+	left: 0px;
+	top: 3px;
+	width: 180px;
+	padding-left: 3px;
+	float: left;
+}
+
+.ticket_ed_email {
+	position: relative;
+	left: 0px;
+	top: 3px;
+	width: 220px;
+	padding-left: 3px;
+	float: left;
+}
+
+.ticket_ed_client_page {
+	position: relative;
+	left: 0px;
+	top: 3px;
+	width: 100px;
+	padding-left: 3px;
+	float: left;
+	clear: right;
+}
+
+.ticket_ed_description {
+	position: relative;
+	left: 5px;
+	top: 5px;
+	padding-right: 3px;
+	padding-left: 3px;
+	padding-bottom: 3px;
+	float: left;
+}
+
+.ticket_ed_description_text {
+	position: relative;
+	left: 20px;
+	top: 5px;
+	color: #0000ff;
+	float: left;
+	clear: right;
+}
+
+.ticket_ed_solution {
+	position: relative;
+	left: 0px;
+	top: 5px;
+	padding-right: 3px;
+	padding-left: 3px;
+	padding-bottom: 3px;
+	float: left;
+}
+
+.ticket_ed_solution_text {
+	position: relative;
+	left: 20px;
+	top: 5px;
+	color: #0000ff;
+	float: left;
+	clear: right;
+}
+
+.ticket_ed_case_number {
+	position: relative;
+	left: 5px;
+	top: 5px;
+	padding-left: 3px;
+	float: left;
+}
+
+.ticket_ed_status {
+	position: relative;
+	left: 20px;
+	top: 5px;
+	padding-left: 3px;
+	float: left;
+}
+
+.ticket_ed_company_id {
+	position: relative;
+	left: 50px;
+	top: 5px;
+	padding-left: 3px;
+	float: left;
+	clear: right;
+}
+
+.ticket_ed_tech_id {
+	position: relative;
+	left: 5px;
+	top: 5px;
+	padding-left: 3px;
+	float: left;
+	clear: left;
+}
+
+.ticket_ed_priority {
+	position: relative;
+	left: 10px;
+	top: 5px;
+	padding-left: 3px;
+	float: left;
+}
+
+.ticket_ed_problem {
+	position: relative;
+	left: 40px;
+	top: 5px;
+	padding-left: 3px;
+	float: left;
+}
+
+.ticket_ed_location {
+	position: relative;
+	left: 60px;
+	top: 5px;
+	padding-left: 3px;
+	float: left;
+	clear: right;
+}
+
+.ticket_ed_pwo {
+	position: relative;
+	left: 10px;
+	top: 5px;
+	float: left;
+	clear: left;
+}
+
+.ticket_ed_submit {
+	position: relative;
+	left: 10px;
+	top: 5px;
+	float: left;
+}
+
+.ticket_ed_cancel {
+	position: relative;
+	left: 10px;
+	top: 5px;
+	float: left;
+}
+
+.ticket_ed_revert {
+	position: relative;
+	left: 10px;
+	top: 5px;
+	float: left;
+	clear: right;
+}

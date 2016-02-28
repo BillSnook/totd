@@ -101,6 +101,38 @@
 		8F4BEFC4F14C68ECBC6852F8 /* Pods-totd WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-totd WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-totd WatchKit Extension/Pods-totd WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
 		9D3EB5CCE2C0663E62920A28 /* Pods-totdTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-totdTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-totdTests/Pods-totdTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9EDFC5669D9399BF78E4A8C9 /* Pods_totd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_totd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A98D6A821C82895F004387C7 /* json-text.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = "json-text.php"; sourceTree = "<group>"; };
+		A98D6A851C82895F004387C7 /* checkUser.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = checkUser.php; sourceTree = "<group>"; };
+		A98D6A861C82895F004387C7 /* index.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = index.php; sourceTree = "<group>"; };
+		A98D6A871C82895F004387C7 /* login.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = login.php; sourceTree = "<group>"; };
+		A98D6A881C82895F004387C7 /* logout.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = logout.php; sourceTree = "<group>"; };
+		A98D6A891C82895F004387C7 /* mysql_connect.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = mysql_connect.php; sourceTree = "<group>"; };
+		A98D6A8A1C82895F004387C7 /* mysql_cred_admin.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = mysql_cred_admin.php; sourceTree = "<group>"; };
+		A98D6A8B1C82895F004387C7 /* mysql_cred_user.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = mysql_cred_user.php; sourceTree = "<group>"; };
+		A98D6A8C1C82895F004387C7 /* index.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = index.php; sourceTree = "<group>"; };
+		A98D6A8D1C82895F004387C7 /* pagefoot.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = pagefoot.php; sourceTree = "<group>"; };
+		A98D6A8E1C82895F004387C7 /* pagehead.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = pagehead.php; sourceTree = "<group>"; };
+		A98D6A8F1C82895F004387C7 /* path.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = path.php; sourceTree = "<group>"; };
+		A98D6A911C82895F004387C7 /* devfunction.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = devfunction.php; sourceTree = "<group>"; };
+		A98D6A921C82895F004387C7 /* devfunction1.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = devfunction1.php; sourceTree = "<group>"; };
+		A98D6A931C82895F004387C7 /* devfunction2.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = devfunction2.php; sourceTree = "<group>"; };
+		A98D6A941C82895F004387C7 /* devfunction3.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = devfunction3.php; sourceTree = "<group>"; };
+		A98D6A951C82895F004387C7 /* domBrowser.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = domBrowser.php; sourceTree = "<group>"; };
+		A98D6A961C82895F004387C7 /* getbanner.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = getbanner.php; sourceTree = "<group>"; };
+		A98D6A971C82895F004387C7 /* myinfo.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = myinfo.php; sourceTree = "<group>"; };
+		A98D6A981C82895F004387C7 /* permissions.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = permissions.php; sourceTree = "<group>"; };
+		A98D6A991C82895F004387C7 /* setbanner.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = setbanner.php; sourceTree = "<group>"; };
+		A98D6A9A1C82895F004387C7 /* setTab.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = setTab.php; sourceTree = "<group>"; };
+		A98D6A9B1C82895F004387C7 /* settings.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = settings.php; sourceTree = "<group>"; };
+		A98D6A9C1C82895F004387C7 /* setupajlib.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = setupajlib.js; sourceTree = "<group>"; };
+		A98D6A9D1C82895F004387C7 /* small_mobile.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = small_mobile.css; sourceTree = "<group>"; };
+		A98D6A9F1C82895F004387C7 /* index.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = index.php; sourceTree = "<group>"; };
+		A98D6AA01C82895F004387C7 /* initDB.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = initDB.php; sourceTree = "<group>"; };
+		A98D6AA11C82895F004387C7 /* killDB.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = killDB.php; sourceTree = "<group>"; };
+		A98D6AA21C82895F004387C7 /* testRemoteDB.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = testRemoteDB.php; sourceTree = "<group>"; };
+		A98D6AA31C82895F004387C7 /* verifyUser.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = verifyUser.php; sourceTree = "<group>"; };
+		A98D6AA41C82895F004387C7 /* style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		A98D6AA61C82895F004387C7 /* json-text.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = "json-text.php"; sourceTree = "<group>"; };
 		A9CA869D1C80D2E200785941 /* totd.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = totd.xcdatamodel; sourceTree = "<group>"; };
 		A9CA869E1C80D2E200785941 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A9CA86A11C80D4CD00785941 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Network.swift; path = Utilities/Network.swift; sourceTree = "<group>"; };
@@ -191,6 +223,93 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A98D6A801C82895F004387C7 /* totdWeb */ = {
+			isa = PBXGroup;
+			children = (
+				A98D6A811C82895F004387C7 /* jotd */,
+				A98D6A831C82895F004387C7 /* jotdManager */,
+				A98D6AA51C82895F004387C7 /* totd */,
+			);
+			path = totdWeb;
+			sourceTree = "<group>";
+		};
+		A98D6A811C82895F004387C7 /* jotd */ = {
+			isa = PBXGroup;
+			children = (
+				A98D6A821C82895F004387C7 /* json-text.php */,
+			);
+			path = jotd;
+			sourceTree = "<group>";
+		};
+		A98D6A831C82895F004387C7 /* jotdManager */ = {
+			isa = PBXGroup;
+			children = (
+				A98D6A841C82895F004387C7 /* admin */,
+				A98D6A8C1C82895F004387C7 /* index.php */,
+				A98D6A8D1C82895F004387C7 /* pagefoot.php */,
+				A98D6A8E1C82895F004387C7 /* pagehead.php */,
+				A98D6A8F1C82895F004387C7 /* path.php */,
+				A98D6A901C82895F004387C7 /* settings */,
+				A98D6A9D1C82895F004387C7 /* small_mobile.css */,
+				A98D6A9E1C82895F004387C7 /* startup */,
+				A98D6AA41C82895F004387C7 /* style.css */,
+			);
+			path = jotdManager;
+			sourceTree = "<group>";
+		};
+		A98D6A841C82895F004387C7 /* admin */ = {
+			isa = PBXGroup;
+			children = (
+				A98D6A851C82895F004387C7 /* checkUser.php */,
+				A98D6A861C82895F004387C7 /* index.php */,
+				A98D6A871C82895F004387C7 /* login.php */,
+				A98D6A881C82895F004387C7 /* logout.php */,
+				A98D6A891C82895F004387C7 /* mysql_connect.php */,
+				A98D6A8A1C82895F004387C7 /* mysql_cred_admin.php */,
+				A98D6A8B1C82895F004387C7 /* mysql_cred_user.php */,
+			);
+			path = admin;
+			sourceTree = "<group>";
+		};
+		A98D6A901C82895F004387C7 /* settings */ = {
+			isa = PBXGroup;
+			children = (
+				A98D6A911C82895F004387C7 /* devfunction.php */,
+				A98D6A921C82895F004387C7 /* devfunction1.php */,
+				A98D6A931C82895F004387C7 /* devfunction2.php */,
+				A98D6A941C82895F004387C7 /* devfunction3.php */,
+				A98D6A951C82895F004387C7 /* domBrowser.php */,
+				A98D6A961C82895F004387C7 /* getbanner.php */,
+				A98D6A971C82895F004387C7 /* myinfo.php */,
+				A98D6A981C82895F004387C7 /* permissions.php */,
+				A98D6A991C82895F004387C7 /* setbanner.php */,
+				A98D6A9A1C82895F004387C7 /* setTab.php */,
+				A98D6A9B1C82895F004387C7 /* settings.php */,
+				A98D6A9C1C82895F004387C7 /* setupajlib.js */,
+			);
+			path = settings;
+			sourceTree = "<group>";
+		};
+		A98D6A9E1C82895F004387C7 /* startup */ = {
+			isa = PBXGroup;
+			children = (
+				A98D6A9F1C82895F004387C7 /* index.php */,
+				A98D6AA01C82895F004387C7 /* initDB.php */,
+				A98D6AA11C82895F004387C7 /* killDB.php */,
+				A98D6AA21C82895F004387C7 /* testRemoteDB.php */,
+				A98D6AA31C82895F004387C7 /* verifyUser.php */,
+			);
+			path = startup;
+			sourceTree = "<group>";
+		};
+		A98D6AA51C82895F004387C7 /* totd */ = {
+			isa = PBXGroup;
+			children = (
+				A98D6AA61C82895F004387C7 /* json-text.php */,
+			);
+			path = totd;
+			sourceTree = "<group>";
+		};
 		A9CA86A51C80D4D400785941 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +327,7 @@
 				A9ED59AA1C7FDDE3003AFE3A /* totdUITests */,
 				A9ED59B41C7FDDE3003AFE3A /* totd WatchKit App */,
 				A9ED59C31C7FDDE3003AFE3A /* totd WatchKit Extension */,
+				A98D6A801C82895F004387C7 /* totdWeb */,
 				A9ED59891C7FDDE3003AFE3A /* Products */,
 				D9941177823DCF040F415EC9 /* Pods */,
 				9DBBBD4DAF69CBE5C254B6D7 /* Frameworks */,
